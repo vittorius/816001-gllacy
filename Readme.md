@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Victor Zagorodny](https://up.htmlacademy.ru/htmlcss/23/user/816001).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Пасунько](https://htmlacademy.ru/profile/id702351).
 
 ---
 
