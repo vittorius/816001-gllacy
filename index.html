@@ -1,12 +1,100 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Глейси</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <nav class="main-navigation">
+      <img src="//via.placeholder.com/154x64" alt="Глейси" class="logo" width="154" height="64">
+      <ul class="site-nav">
+        <li><a class="site-nav-item" href="catalog.html">Каталог</a></li>
+        <li><a class="site-nav-item" href="delivery.html">Доставка и оплата</a></li>
+        <li><a class="site-nav-item" href="about.html">О Компании</a></li>
+      </ul>
+      <ul class="user-nav">
+        <li class="search">
+          <button>
+            <span class="visually-hidden">Поиск</span>
+            <img src="//via.placeholder.com/33x33" alt="Поиск" width="33" height="33">
+          </button>
+        </li>
+        <li class="login">Вход</li>
+        <li class="cart">Пусто</li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <h1 class="visually-hidden">Магазин &laquo;Глейси&raquo;</h1>
+    <section class="features">
+      <h2 class="visually-hidden">Информация о магазине</h2>
+      <b>
+        Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
+      </b>
+      <ul class="features">
+        <li class="feat">
+          Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
+          проверенных временем технологий.
+        </li>
+        <li class="feat">
+          Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
+          ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+        </li>
+        <li class="feat">
+          Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
+          связывает долговременное сотрудничество.
+        </li>
+        <li class="feat">
+          Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
+          растаять в пути и позволяет сохранить превосходный вкус.
+        </li>
+      </ul>
+    </section>
+    <div class="columns">
+      <section class="news-item">
+        <img src="//via.placeholder.com/560x220" alt="10 способов сервировки фруктовых щербетов к столу" width="560"
+          height="220">
+        <h2>Новое в нашем блоге</h2>
+        <a class="title" href="news-item.html">10 способов сервировки фруктовых щербетов к столу</a>
+      </section>
+      <section class="mailing-list">
+        <h2 class="visually-hidden">Рассылка</h2>
+        <p class="mailing-list-desc">
+          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+          Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+        </p>
+        <form action="mailing-list.php" method="POST">
+          <input type="email" name="email" placeholder="Электронная почта">
+          <input type="submit" value="Отправить">
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <ul class="social-networks">
+      <li><a class="social-btn social-btn-tw" href="https://twitter.com/Gllacy">Twitter</a></li>
+      <li><a class="social-btn social-btn-ig" href="https://instagram.com/Gllacy">Instagram</a></li>
+      <li><a class="social-btn social-btn-fb" href="https://facebook.com/Gllacy"> Facebook</a></li>
+      <li><a class="social-btn social-btn-vk" href="https://vk.com/gllacy">Vk.com</a></li>
+    </ul>
+    <ul class="info-links">
+      <li><a class="info-link" href="for-suppliers.html">Для поставщиков</a></li>
+      <li><a class="info-link" href="documents.html">Наши документы</a></li>
+      <li><a class="info-link" href="manufacturing.html">О производстве</a></li>
+      <li><a class="info-link" href="eco-standards.html">Экологические стандарты</a></li>
+    </ul>
+    <div class="copyright">
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="//via.placeholder.com/108x39" alt="HTML Academy" width="108" height="39">
+      </a>
+      <p>
+        Сделано в HTML Academy &copy; 2017
+      </p>
+    </div>
+  </footer>
+</body>
+
 </html>
