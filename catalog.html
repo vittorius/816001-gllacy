@@ -18,14 +18,18 @@
         <li><a class="site-nav-item" href="about.html">О Компании</a></li>
       </ul>
       <ul class="user-nav">
-        <li class="search">
-          <button>
+        <li>
+          <a class="search-link" href="search.html">
             <span class="visually-hidden">Поиск</span>
             <img src="img/search-icon.svg" alt="Поиск" width="17" height="17">
-          </button>
+          </a>
         </li>
-        <li class="login">Вход</li>
-        <li class="cart filled">2 товара</li>
+        <li>
+          <a href="#" class="login-link">Вход</a>
+        </li>
+        <li class="cart">
+          <a href="#" class="cart-link" aria-label="Корзина: 2 товара">2 товара</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -37,8 +41,8 @@
       8 812 450-25-25
     </p>
     <ul class="breadcrumbs">
-      <li><a href="index.html"></a></li>
-      <li><a href="catalog.html"></a></li>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="catalog.html">Каталог</a></li>
       <li class="active">Сливочное</li>
     </ul>
     <h1>Сливочное мороженое</h1>
@@ -168,10 +172,14 @@
   </main>
   <footer class="page-footer">
     <ul class="social-networks">
-      <li><a class="social-btn social-btn-tw" href="https://twitter.com/Gllacy">Twitter</a></li>
-      <li><a class="social-btn social-btn-ig" href="https://instagram.com/Gllacy">Instagram</a></li>
-      <li><a class="social-btn social-btn-fb" href="https://facebook.com/Gllacy"> Facebook</a></li>
-      <li><a class="social-btn social-btn-vk" href="https://vk.com/gllacy">Vk.com</a></li>
+      <li><a class="social-btn social-btn-tw" href="https://twitter.com/Gllacy"><span class="visually-hidden">Глейси в
+            Twitter</span></a></li>
+      <li><a class="social-btn social-btn-ig" href="https://instagram.com/Gllacy"><span class="visually-hidden">Глейси
+            в Instagram</span></a></li>
+      <li><a class="social-btn social-btn-fb" href="https://facebook.com/Gllacy"><span class="visually-hidden">Глейси
+            на Facebook</span></a></li>
+      <li><a class="social-btn social-btn-vk" href="https://vk.com/gllacy"><span class="visually-hidden">Глейси
+            Вконтакте</span></a></li>
     </ul>
     <ul class="info-links">
       <li><a class="info-link" href="for-suppliers.html">Для поставщиков</a></li>
@@ -188,6 +196,49 @@
       </p>
     </div>
   </footer>
+  <!-- popups -->
+  <!-- popups: shopping cart -->
+  <section class="shopping cart">
+    <h2 class="visually-hidden">Товары в корзине</h2>
+    <ul>
+      <li class="cart-item-details">
+        <div class="cart-item-remove">
+          <button type="button" aria-label="Удалить из корзины">×</button>
+        </div>
+        <div class="cart-item-details">
+          <img src="img/cart-item-1.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33">
+          <span>Пломбир с апельсиновым джемом</span>
+        </div>
+        <div class="cart-item-qty-price">
+          <span class="cart-item-qty">1,5 кг х</span>
+          <span class="cart-item-price-per-kg">200 руб.</span>
+        </div>
+        <div class="cart-item-total-price">
+          <span>300 руб.</span>
+        </div>
+      </li>
+      <li class="cart-item-details">
+        <div class="cart-item-remove">
+          <button type="button" aria-label="Удалить из корзины">×</button>
+        </div>
+        <div class="cart-item-details">
+          <img src="img/cart-item-2.jpg" alt="Клубничный пломбир с присыпкой  из белого шоколада" width="33" height="33">
+          <span>Клубничный пломбир с присыпкой  из белого шоколада</span>
+        </div>
+        <div class="cart-item-qty-price">
+          <span class="cart-item-qty">1,5 кг х</span>
+          <span class="cart-item-price-per-kg">300 руб.</span>
+        </div>
+        <div class="cart-item-total-price">
+          <span>450 руб.</span>
+        </div>
+      </li>
+    </ul>
+    <p>
+      Итого: 750 руб.
+    </p>
+    <a href="/new_order" class="new-order-link">Оформить заказ</a>
+  </section>
 </body>
 
 </html>
