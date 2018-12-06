@@ -11,19 +11,44 @@
     <nav class="main-navigation">
       <img src="img/logo.svg" alt="Глейси" class="logo" width="154" height="64">
       <ul class="site-nav">
-        <li><a class="site-nav-item" href="catalog.html">Каталог</a></li>
+        <li>
+          <a class="site-nav-item" href="catalog.html">Каталог</a>
+          <ul>
+            <li>
+              Новинки
+              <ul>
+                <li>
+                  <a href="catalog.html">Сливочное</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Щербеты</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Фруктовый лед</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Мелорин</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
         <li><a class="site-nav-item" href="delivery.html">Доставка и оплата</a></li>
         <li><a class="site-nav-item" href="about.html">О Компании</a></li>
       </ul>
       <ul class="user-nav">
-        <li class="search">
-          <button>
+        <li>
+          <a class="search-link" href="search.html">
             <span class="visually-hidden">Поиск</span>
             <img src="img/search-icon.svg" alt="Поиск" width="17" height="17">
-          </button>
+          </a>
         </li>
-        <li class="login">Вход</li>
-        <li class="cart">Пусто</li>
+        <li>
+          <a href="#" class="login-link">Вход</a>
+        </li>
+        <li class="cart">
+          <a href="#" class="cart-link" aria-label="Корзина: нет товаров">Пусто</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -65,19 +90,23 @@
           Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
           Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
         </p>
-        <form action="mailing-list.php" method="POST">
-          <input type="email" name="email" placeholder="Электронная почта">
-          <input type="submit" value="Отправить">
+        <form action="/add-to-mailing-list" method="POST">
+          <input type="email" name="email" aria-label="Ваш адрес электронной почты для рассылки" placeholder="Электронная почта">
+          <button type="submit">Отправить</button>
         </form>
       </section>
     </div>
   </main>
   <footer class="page-footer">
     <ul class="social-networks">
-      <li><a class="social-btn social-btn-tw" href="https://twitter.com/Gllacy">Twitter</a></li>
-      <li><a class="social-btn social-btn-ig" href="https://instagram.com/Gllacy">Instagram</a></li>
-      <li><a class="social-btn social-btn-fb" href="https://facebook.com/Gllacy"> Facebook</a></li>
-      <li><a class="social-btn social-btn-vk" href="https://vk.com/gllacy">Vk.com</a></li>
+      <li><a class="social-btn social-btn-tw" href="https://twitter.com/Gllacy"><span class="visually-hidden">Глейси в
+            Twitter</span></a></li>
+      <li><a class="social-btn social-btn-ig" href="https://instagram.com/Gllacy"><span class="visually-hidden">Глейси
+            в Instagram</span></a></li>
+      <li><a class="social-btn social-btn-fb" href="https://facebook.com/Gllacy"><span class="visually-hidden">Глейси
+            на Facebook</span></a></li>
+      <li><a class="social-btn social-btn-vk" href="https://vk.com/gllacy"><span class="visually-hidden">Глейси
+            Вконтакте</span></a></li>
     </ul>
     <ul class="info-links">
       <li><a class="info-link" href="for-suppliers.html">Для поставщиков</a></li>
@@ -94,6 +123,58 @@
       </p>
     </div>
   </footer>
+  <!-- popups -->
+  <!-- popups: login -->
+  <section class="login-popup">
+    <h2 class="visually-hidden">Форма входа</h2>
+    <form action="/login" method="POST">
+      <p>
+        <input type="email" name="email" aria-label="Электронная почта" placeholder="Электронная почта">
+      </p>
+      <p>
+        <input type="password" name="password" aria-label="Пароль" placeholder="Пароль">
+      </p>
+      <div class="login-action-columns">
+        <div>
+          <button type="submit">Войти</button>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a class="login-action-link" href="forgot-password.html">Забыли пароль?</a>
+            </li>
+            <li>
+              <a class="login-action-link" href="sign-up.html">Новая регистрация</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </form>
+  </section>
+  <!-- popups: search -->
+  <section class="search-popup">
+    <h2 class="visually-hidden">Форма поиска</h2>
+    <form action="/search" method="POST">
+      <input type="search" name="search" aria-label="Что ищем?" placeholder="Что ищем?">
+    </form>
+  </section>
+  <!-- popups: contact -->
+  <section class="contact-popup">
+    <h2>Мы обязательно вам ответим!</h2>
+    <form action="/search" method="POST">
+      <p>
+        <input type="text" name="contact[name]" aria-label="Как вас зовут?" placeholder="Как вас зовут?">
+      </p>
+      <p>
+        <input type="email" name="contact[email]" aria-label="Ваша почта для ответа?" placeholder="Ваша почта для ответа?">
+      </p>
+      <p>
+        <textarea name="contact[message]" cols="30" rows="10" aria-label="Напишите что-нибудь..." placeholder="Напишите что-нибудь..."></textarea>
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
+    <button type="button" aria-label="Закрыть">×</button>
+  </section>
 </body>
 
 </html>
