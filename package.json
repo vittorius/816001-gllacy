@@ -1,0 +1,22 @@
+{
+  "name": "816001-gllacy",
+  "version": "1.0.0",
+  "description": "Gllacy shop website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vittorius/816001-gllacy.git"
+  },
+  "author": "Victor Zagorodny",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vittorius/816001-gllacy/issues"
+  },
+  "homepage": "https://github.com/vittorius/816001-gllacy#readme",
+  "devDependencies": {
+    "stylelint-config-htmlacademy": "^0.1.1"
+  }
+}
