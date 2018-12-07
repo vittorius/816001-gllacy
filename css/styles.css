@@ -75,3 +75,11 @@ a:active {
 .button:active {
   background-color: #f26843;
 }
+
+/* temporary */
+.subnav-holder,
+.search-popup,
+.login-popup,
+.contact-popup {
+  display: none;
+}
