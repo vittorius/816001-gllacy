@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  /* stylelint-disable-next-line value-list-comma-newline-after */
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff");
+  /* stylelint-disable-next-line value-keyword-case */
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  /* stylelint-disable-next-line value-list-comma-newline-after */
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("../fonts/robotomedium.woff2") format("woff2"),
+    url("../fonts/robotomedium.woff") format("woff");
+  /* stylelint-disable-next-line value-keyword-case */
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  /* stylelint-disable-next-line value-list-comma-newline-after */
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/robotobold.woff2") format("woff2"), url("../fonts/robotobold.woff") format("woff");
+  /* stylelint-disable-next-line value-keyword-case */
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+body {
+  font: bold 16px/18px "Roboto", "Arial", sans-serif;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
