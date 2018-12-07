@@ -41,5 +41,19 @@ img {
 }
 
 a {
+  color: #ffffff;
   text-decoration: none;
 }
+
+a:hover,
+a:focus,
+a:active {
+  color: #ffbc9e;
+}
+
+.site-nav-link:hover,
+.site-nav-link:focus,
+.site-nav-link:active {
+  color: #ffffff;
+}
+
