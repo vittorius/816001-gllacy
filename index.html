@@ -1,175 +1,140 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Главная - Глейси</title>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Главная - Глейси</title>
-</head>
-
-<body>
-  <header class="page-header">
-    <nav class="main-navigation">
-      <img src="img/logo.svg" alt="Глейси" class="logo" width="154" height="64">
-      <ul class="site-nav">
-        <li>
-          <a class="site-nav-item" href="catalog.html">Каталог</a>
-          <ul>
-            <li>
-              Новинки
-              <ul>
-                <li>
-                  <a href="catalog.html">Сливочное</a>
-                </li>
-                <li>
-                  <a href="catalog.html">Щербеты</a>
-                </li>
-                <li>
-                  <a href="catalog.html">Фруктовый лед</a>
-                </li>
-                <li>
-                  <a href="catalog.html">Мелорин</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><a class="site-nav-item" href="delivery.html">Доставка и оплата</a></li>
-        <li><a class="site-nav-item" href="about.html">О Компании</a></li>
-      </ul>
-      <ul class="user-nav">
-        <li>
-          <!-- popup: search -->
-          <section class="search-popup">
-            <h2 class="visually-hidden">Форма поиска</h2>
-            <a class="search-link" href="search.html">
-              <span class="visually-hidden">Поиск</span>
-              <img src="img/search-icon.svg" alt="Поиск" width="17" height="17">
-            </a>
-            <form action="/search" method="POST">
-              <input type="search" name="search" aria-label="Что ищем?" placeholder="Что ищем?">
-            </form>
-          </section>
-        </li>
-        <li>
-          <!-- popup: login -->
-          <section class="login-popup">
-            <h2 class="visually-hidden">Форма входа</h2>
-            <a href="#" class="login-link">Вход</a>
-            <form action="/login" method="POST">
-              <p>
-                <input type="email" name="email" aria-label="Электронная почта" placeholder="Электронная почта">
-              </p>
-              <p>
-                <input type="password" name="password" aria-label="Пароль" placeholder="Пароль">
-              </p>
-              <div class="login-action-columns">
-                <div>
-                  <button type="submit">Войти</button>
+  <body>
+    <header class="page-header">
+      <nav class="main-navigation">
+        <img src="img/logo.svg" alt="Глейси" class="logo" width="154" height="64" />
+        <ul class="site-nav">
+          <li>
+            <a class="site-nav-item" href="catalog.html">Каталог</a>
+            <ul>
+              <li>
+                Новинки
+                <ul>
+                  <li><a href="catalog.html">Сливочное</a></li>
+                  <li><a href="catalog.html">Щербеты</a></li>
+                  <li><a href="catalog.html">Фруктовый лед</a></li>
+                  <li><a href="catalog.html">Мелорин</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a class="site-nav-item" href="delivery.html">Доставка и оплата</a></li>
+          <li><a class="site-nav-item" href="about.html">О Компании</a></li>
+        </ul>
+        <ul class="user-nav">
+          <li>
+            <!-- popup: search -->
+            <section class="search-popup">
+              <h2 class="visually-hidden">Форма поиска</h2>
+              <a class="search-link" href="search.html">
+                <span class="visually-hidden">Поиск</span> <img src="img/search-icon.svg" alt="Поиск" width="17" height="17" />
+              </a>
+              <form action="/search" method="POST"><input type="search" name="search" aria-label="Что ищем?" placeholder="Что ищем?" /></form>
+            </section>
+          </li>
+          <li>
+            <!-- popup: login -->
+            <section class="login-popup">
+              <h2 class="visually-hidden">Форма входа</h2>
+              <a href="#" class="login-link">Вход</a>
+              <form action="/login" method="POST">
+                <p><input type="email" name="email" aria-label="Электронная почта" placeholder="Электронная почта" /></p>
+                <p><input type="password" name="password" aria-label="Пароль" placeholder="Пароль" /></p>
+                <div class="login-action-columns">
+                  <div><button type="submit">Войти</button></div>
+                  <div>
+                    <ul>
+                      <li><a class="login-action-link" href="forgot-password.html">Забыли пароль?</a></li>
+                      <li><a class="login-action-link" href="sign-up.html">Новая регистрация</a></li>
+                    </ul>
+                  </div>
                 </div>
-                <div>
-                  <ul>
-                    <li>
-                      <a class="login-action-link" href="forgot-password.html">Забыли пароль?</a>
-                    </li>
-                    <li>
-                      <a class="login-action-link" href="sign-up.html">Новая регистрация</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </form>
-          </section>
-        </li>
-        <li class="cart">
-          <a href="#" class="cart-link" aria-label="Корзина: нет товаров">Пусто</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="main">
-    <h1 class="visually-hidden">Магазин &laquo;Глейси&raquo;</h1>
-    <section class="features">
-      <h2 class="visually-hidden">Информация о магазине</h2>
-      <b>
-        Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
-      </b>
-      <ul class="features">
-        <li class="feat">
-          Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
-          проверенных временем технологий.
-        </li>
-        <li class="feat">
-          Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
-          ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-        </li>
-        <li class="feat">
-          Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
-          связывает долговременное сотрудничество.
-        </li>
-        <li class="feat">
-          Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
-          растаять в пути и позволяет сохранить превосходный вкус.
-        </li>
-      </ul>
-    </section>
-    <div class="columns">
-      <section class="news-item">
-        <img src="img/news-item-bg.jpg" alt="10 способов сервировки фруктовых щербетов к столу" width="560" height="220">
-        <h2>Новое в нашем блоге</h2>
-        <a class="title" href="news-item.html">10 способов сервировки фруктовых щербетов к столу</a>
+              </form>
+            </section>
+          </li>
+          <li class="cart"><a href="#" class="cart-link" aria-label="Корзина: нет товаров">Пусто</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h1 class="visually-hidden">Магазин &laquo;Глейси&raquo;</h1>
+      <section class="features">
+        <h2 class="visually-hidden">Информация о магазине</h2>
+        <b> Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес </b>
+        <ul class="features">
+          <li class="feat">
+            Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем
+            технологий.
+          </li>
+          <li class="feat">
+            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки
+            произведены из натурального, экологически чистого сырья.
+          </li>
+          <li class="feat">
+            Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное
+            сотрудничество.
+          </li>
+          <li class="feat">
+            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет
+            сохранить превосходный вкус.
+          </li>
+        </ul>
       </section>
-      <section class="mailing-list">
-        <h2 class="visually-hidden">Рассылка</h2>
-        <p class="mailing-list-desc">
-          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
-          Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+      <div class="columns">
+        <section class="news-item">
+          <img src="img/news-item-bg.jpg" alt="10 способов сервировки фруктовых щербетов к столу" width="560" height="220" />
+          <h2>Новое в нашем блоге</h2>
+          <a class="title" href="news-item.html">10 способов сервировки фруктовых щербетов к столу</a>
+        </section>
+        <section class="mailing-list">
+          <h2 class="visually-hidden">Рассылка</h2>
+          <p class="mailing-list-desc">
+            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать
+            всякой ненужной ерунды. Честно =)
+          </p>
+          <form action="/add-to-mailing-list" method="POST">
+            <input type="email" name="email" aria-label="Ваш адрес электронной почты для рассылки" placeholder="Электронная почта" />
+            <button type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <ul class="social-networks">
+        <li><a class="social-btn social-btn-tw" href="https://twitter.com/Gllacy" aria-label="Глейси в Twitter"></a></li>
+        <li><a class="social-btn social-btn-ig" href="https://instagram.com/Gllacy" aria-label="Глейси в Instagram"></a></li>
+        <li><a class="social-btn social-btn-fb" href="https://facebook.com/Gllacy" aria-label="Глейси на Facebook"></a></li>
+        <li><a class="social-btn social-btn-vk" href="https://vk.com/gllacy" aria-label="Глейси Вконтакте"></a></li>
+      </ul>
+      <ul class="info-links">
+        <li><a class="info-link" href="for-suppliers.html">Для поставщиков</a></li>
+        <li><a class="info-link" href="documents.html">Наши документы</a></li>
+        <li><a class="info-link" href="manufacturing.html">О производстве</a></li>
+        <li><a class="info-link" href="eco-standards.html">Экологические стандарты</a></li>
+      </ul>
+      <div class="copyright">
+        <a href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/logo-htmlacademy.svg" alt="HTML Academy" width="108" height="38" /> </a>
+        <p>Сделано в HTML Academy &copy; 2017</p>
+      </div>
+    </footer>
+    <!-- popup: contact -->
+    <section class="contact-popup">
+      <h2>Мы обязательно вам ответим!</h2>
+      <form action="/search" method="POST">
+        <p><input type="text" name="contact[name]" aria-label="Как вас зовут?" placeholder="Как вас зовут?" /></p>
+        <p><input type="email" name="contact[email]" aria-label="Ваша почта для ответа?" placeholder="Ваша почта для ответа?" /></p>
+        <p>
+          <textarea name="contact[message]" cols="30" rows="10" aria-label="Напишите что-нибудь..." placeholder="Напишите что-нибудь..."></textarea>
         </p>
-        <form action="/add-to-mailing-list" method="POST">
-          <input type="email" name="email" aria-label="Ваш адрес электронной почты для рассылки" placeholder="Электронная почта">
-          <button type="submit">Отправить</button>
-        </form>
-      </section>
-    </div>
-  </main>
-  <footer class="page-footer">
-    <ul class="social-networks">
-      <li><a class="social-btn social-btn-tw" href="https://twitter.com/Gllacy" aria-label="Глейси в Twitter"></a></li>
-      <li><a class="social-btn social-btn-ig" href="https://instagram.com/Gllacy" aria-label="Глейси в Instagram"></a></li>
-      <li><a class="social-btn social-btn-fb" href="https://facebook.com/Gllacy" aria-label="Глейси на Facebook"></a></li>
-      <li><a class="social-btn social-btn-vk" href="https://vk.com/gllacy" aria-label="Глейси Вконтакте"></a></li>
-    </ul>
-    <ul class="info-links">
-      <li><a class="info-link" href="for-suppliers.html">Для поставщиков</a></li>
-      <li><a class="info-link" href="documents.html">Наши документы</a></li>
-      <li><a class="info-link" href="manufacturing.html">О производстве</a></li>
-      <li><a class="info-link" href="eco-standards.html">Экологические стандарты</a></li>
-    </ul>
-    <div class="copyright">
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy.svg" alt="HTML Academy" width="108" height="38">
-      </a>
-      <p>
-        Сделано в HTML Academy &copy; 2017
-      </p>
-    </div>
-  </footer>
-  <!-- popup: contact -->
-  <section class="contact-popup">
-    <h2>Мы обязательно вам ответим!</h2>
-    <form action="/search" method="POST">
-      <p>
-        <input type="text" name="contact[name]" aria-label="Как вас зовут?" placeholder="Как вас зовут?">
-      </p>
-      <p>
-        <input type="email" name="contact[email]" aria-label="Ваша почта для ответа?" placeholder="Ваша почта для ответа?">
-      </p>
-      <p>
-        <textarea name="contact[message]" cols="30" rows="10" aria-label="Напишите что-нибудь..." placeholder="Напишите что-нибудь..."></textarea>
-      </p>
-      <button type="submit">Отправить</button>
-    </form>
-    <button type="button" aria-label="Закрыть">×</button>
-  </section>
-</body>
-
+        <button type="submit">Отправить</button>
+      </form>
+      <button type="button" aria-label="Закрыть">×</button>
+    </section>
+  </body>
 </html>
