@@ -70,11 +70,12 @@ a:active {
   background-color: #f26843;
 }
 
-/* temporary */
+/* TODO: temporary hide pop-ups,  */
 .subnav-holder,
 .search-popup,
 .login-popup,
-.contact-popup {
+.contact-popup,
+.shopping-cart-popup {
   display: none;
 }
 
