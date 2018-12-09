@@ -134,3 +134,23 @@ a:active {
 .mailing-list input::-ms-input-placeholder {
   color: #999999;
 }
+
+.social-networks,
+.info-links {
+  list-style: none;
+}
+
+.info-link {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.info-links li:first-child .info-link {
+  font-weight: bold;
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 16px;
+}
