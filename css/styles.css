@@ -37,6 +37,7 @@ img {
 a {
   font-weight: bold;
   color: #ffffff;
+  /* TODO: remove text-decoration and replace it with border-bottom */
 }
 
 a:hover,
@@ -169,6 +170,37 @@ a:active {
 
 .mailing-list input::-ms-input-placeholder {
   color: #999999;
+}
+
+.catalog-page h1 {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 41px;
+}
+
+.catalog-items-list {
+  list-style: none;
+}
+
+.catalog-item h2 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.catalog-item .price {
+  line-height: 13.13px;
+  font-weight: bold;
+  /* TODO: add border-bottom (same as we have for links) */
+}
+
+.catalog-item .currency {
+  font-size: 45px;
+}
+
+.catalog-item .kg {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .social-networks,
