@@ -51,12 +51,6 @@ a:active {
   color: #ffbc9e;
 }
 
-.site-nav-link:hover,
-.site-nav-link:focus,
-.site-nav-link:active {
-  color: #ffffff;
-}
-
 .button {
   font-size: 18px;
   font-weight: bold;
@@ -82,6 +76,26 @@ a:active {
 .login-popup,
 .contact-popup {
   display: none;
+}
+
+.site-nav-link:hover,
+.site-nav-link:focus,
+.site-nav-link:active {
+  color: #ffffff;
+}
+
+.site-nav-link:active {
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.site-nav .active .site-nav-link {
+  background-color: #d07058;
+}
+
+.site-nav .active .site-nav-link:active {
+  color: #323232;
+  background-color: #f8f7f4;
 }
 
 .features {
