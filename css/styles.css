@@ -109,6 +109,23 @@ a:active {
   color: #323232;
 }
 
+.working-hours {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+}
+
+.work-phone-number {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  line-height: 16px;
+}
+
 .features {
   background-color: #eee3d0;
   color: #323232;
