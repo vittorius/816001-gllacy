@@ -98,6 +98,16 @@ a:active {
   background-color: #f8f7f4;
 }
 
+.user-nav a {
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.cart-link {
+  color: #323232;
+}
+
 .features {
   background-color: #eee3d0;
   color: #323232;
