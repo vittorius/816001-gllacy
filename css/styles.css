@@ -30,7 +30,7 @@
 }
 
 body {
-  font: bold 16px/18px "Roboto", "Arial", sans-serif;
+  font: 16px/18px "Roboto", "Arial", sans-serif;
   color: #ffffff;
 
   background-color: #849d8f;
@@ -41,8 +41,8 @@ img {
 }
 
 a {
+  font-weight: bold;
   color: #ffffff;
-  text-decoration: none;
 }
 
 a:hover,
@@ -82,4 +82,55 @@ a:active {
 .login-popup,
 .contact-popup {
   display: none;
+}
+
+.features {
+  background-color: #eee3d0;
+  color: #323232;
+}
+
+.features-desc {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.features-list {
+  list-style: none;
+  line-height: 22px;
+}
+
+.news-item {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.news-item h2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.news-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  color: inherit;
+}
+
+.mailing-list {
+  color: #5a5a5a;
+  background-color: #f8f7f4;
+}
+
+.mailing-list-desc {
+  line-height: 22px;
+}
+
+.mailing-list input::placeholder {
+  color: #999999;
+}
+
+.mailing-list input::-ms-input-placeholder {
+  color: #999999;
 }
