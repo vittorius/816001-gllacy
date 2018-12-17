@@ -70,7 +70,7 @@ a {
 }
 
 /* TODO: temporary hide pop-ups,  */
-.subnav-holder,
+.subnav,
 .search-popup,
 .login-popup,
 .contact-popup,
@@ -101,6 +101,33 @@ a {
 .site-nav .site-nav-link:active.active {
   color: #323232;
   background-color: #f8f7f4;
+}
+
+.subnav {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+
+.subnav ul {
+  list-style: none;
+}
+
+.subnav-group {
+  color: #323232;
+}
+
+.subnav .link {
+  color: #323232;
+  box-shadow: 0 1px rgba(50, 50, 50, 0.3);
+}
+
+.subnav .link:hover,
+.subnav .link:focus,
+.subnav .link:active {
+  color: #e84d37;
+  box-shadow: 0 1px rgba(232, 77, 55, 0.3);
 }
 
 .user-nav a {
@@ -164,11 +191,23 @@ a {
 }
 
 .news-item-title-link {
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  height: 25px;
   font-size: 24px;
   font-weight: bold;
   line-height: 30px;
-  color: inherit;
-  text-decoration: underline;
+  color: #323232;
+  box-shadow: 0 2px #323232;
+}
+
+.news-item-title-link:hover,
+.news-item-title-link:focus,
+.news-item-title-link:active {
+  color: #e84d37;
+  box-shadow: 0 2px rgba(232, 77, 55);
 }
 
 .mailing-list {

@@ -13,36 +13,37 @@
         <img src="img/logo.svg" alt="Глейси" class="logo" width="154" height="64" />
         <ul class="site-nav">
           <li>
-            <a class="site-nav-link" href="catalog.html">Каталог</a>
-            <div class="subnav-holder">
-              Новинки
+            <a class="link" href="catalog.html">Каталог</a>
+            <!-- popup: subnav -->
+            <div class="subnav">
+              <span class="subnav-group">Новинки</span>
               <ul>
-                <li><a href="catalog.html">Сливочное</a></li>
-                <li><a href="catalog.html">Щербеты</a></li>
-                <li><a href="catalog.html">Фруктовый лед</a></li>
-                <li><a href="catalog.html">Мелорин</a></li>
+                <li><a class="link" href="catalog.html">Сливочное</a></li>
+                <li><a class="link" href="catalog.html">Щербеты</a></li>
+                <li><a class="link" href="catalog.html">Фруктовый лед</a></li>
+                <li><a class="link" href="catalog.html">Мелорин</a></li>
               </ul>
             </div>
           </li>
-          <li><a class="site-nav-link" href="delivery.html">Доставка и оплата</a></li>
-          <li><a class="site-nav-link" href="about.html">О Компании</a></li>
+          <li><a class="link" href="delivery.html">Доставка и оплата</a></li>
+          <li><a class="link" href="about.html">О Компании</a></li>
         </ul>
         <ul class="user-nav">
           <li>
+            <button class="search-link">
+              <span class="visually-hidden">Поиск</span><img src="img/search-icon.svg" alt="Поиск" width="17" height="17" />
+            </button>
             <!-- popup: search -->
             <section class="search-popup">
               <h2 class="visually-hidden">Форма поиска</h2>
-              <a class="search-link" href="search.html">
-                <span class="visually-hidden">Поиск</span> <img src="img/search-icon.svg" alt="Поиск" width="17" height="17" />
-              </a>
               <form action="/search" method="POST"><input type="search" name="search" aria-label="Что ищем?" placeholder="Что ищем?" /></form>
             </section>
           </li>
           <li>
+            <button class="login-link">Вход</button>
             <!-- popup: login -->
             <section class="login-popup">
               <h2 class="visually-hidden">Форма входа</h2>
-              <a href="#" class="login-link">Вход</a>
               <form action="/login" method="POST">
                 <p><input type="email" name="email" aria-label="Электронная почта" placeholder="Электронная почта" /></p>
                 <p><input type="password" name="password" aria-label="Пароль" placeholder="Пароль" /></p>
@@ -58,7 +59,11 @@
               </form>
             </section>
           </li>
-          <li class="cart"><a href="#" class="cart-link" aria-label="Корзина: нет товаров">Пусто</a></li>
+          <li class="cart">
+            <button class="cart-link" aria-label="Корзина: нет товаров">Пусто</button>
+            <!-- popup: shopping cart -->
+            <section class="shopping-cart-popup"><h2 class="visually-hidden">Товары в корзине</h2></section>
+          </li>
         </ul>
       </nav>
     </header>
@@ -92,7 +97,7 @@
         <section class="news-item">
           <img src="img/news-item-bg.jpg" alt="10 способов сервировки фруктовых щербетов к столу" width="560" height="220" />
           <h2>Новое в нашем блоге</h2>
-          <a class="news-item-title" href="news-item.html">10 способов сервировки фруктовых щербетов к столу</a>
+          <a class="news-item-title-link" href="news-item.html">10 способов сервировки фруктовых щербетов к столу</a>
         </section>
         <section class="mailing-list">
           <h2 class="visually-hidden">Рассылка</h2>
@@ -115,14 +120,14 @@
         <li><a class="social-btn social-btn-vk" href="https://vk.com/gllacy" aria-label="Глейси Вконтакте"></a></li>
       </ul>
       <ul class="info-links">
-        <li><a class="info-link" href="for-suppliers.html">Для поставщиков</a></li>
-        <li><a class="info-link" href="documents.html">Наши документы</a></li>
-        <li><a class="info-link" href="manufacturing.html">О производстве</a></li>
-        <li><a class="info-link" href="eco-standards.html">Экологические стандарты</a></li>
+        <li><a class="link suppliers-info-link" href="for-suppliers.html">Для поставщиков</a></li>
+        <li><a class="link" href="documents.html">Наши документы</a></li>
+        <li><a class="link" href="manufacturing.html">О производстве</a></li>
+        <li><a class="link" href="eco-standards.html">Экологические стандарты</a></li>
       </ul>
       <div class="copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="HTML Academy" width="108" height="38"/></a>
-        <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
+        <p>Сделано в <a class="link copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
       </div>
     </footer>
     <!-- popup: contact -->
