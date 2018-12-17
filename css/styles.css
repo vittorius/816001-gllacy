@@ -35,15 +35,19 @@ img {
 }
 
 a {
-  font-weight: bold;
-  color: #ffffff;
-  /* TODO: remove text-decoration and replace it with border-bottom */
+  text-decoration: none;
 }
 
-a:hover,
-a:focus,
-a:active {
+.link {
+  color: #ffffff;
+  box-shadow: 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.link:hover,
+.link:focus,
+.link:active {
   color: #ffbc9e;
+  box-shadow: 0 1px rgba(255, 188, 158, 0.3);
 }
 
 .button {
@@ -74,22 +78,27 @@ a:active {
   display: none;
 }
 
-.site-nav-link:hover,
-.site-nav-link:focus,
-.site-nav-link:active {
-  color: #ffffff;
+.site-nav .link {
+  font-weight: bold;
+  box-shadow: none;
 }
 
-.site-nav-link:active {
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: inherit;
+  box-shadow: none;
+}
+
+.site-nav .link:active {
   color: #323232;
   background-color: #f8f7f4;
 }
 
-.site-nav .active .site-nav-link {
+.site-nav .link.active {
   background-color: #d07058;
 }
 
-.site-nav .active .site-nav-link:active {
+.site-nav .site-nav-link:active.active {
   color: #323232;
   background-color: #f8f7f4;
 }
@@ -97,11 +106,17 @@ a:active {
 .user-nav a {
   font-size: 14px;
   line-height: 16px;
-  text-decoration: none;
 }
 
-.cart-link {
+.user-nav button {
+  border: none;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
   color: #323232;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .working-hours {
@@ -148,11 +163,12 @@ a:active {
   line-height: 22px;
 }
 
-.news-item-title {
+.news-item-title-link {
   font-size: 24px;
   font-weight: bold;
   line-height: 30px;
   color: inherit;
+  text-decoration: underline;
 }
 
 .mailing-list {
@@ -164,11 +180,13 @@ a:active {
   line-height: 22px;
 }
 
-.mailing-list input::placeholder {
+/* NOTE: works only if specified as ungrouped */
+.mailing-list input::-ms-input-placeholder {
   color: #999999;
 }
 
-.mailing-list input::-ms-input-placeholder {
+/* NOTE: works only if specified as ungrouped */
+.mailing-list input::placeholder {
   color: #999999;
 }
 
@@ -191,14 +209,18 @@ a:active {
 .catalog-item .price {
   line-height: 13.13px;
   font-weight: bold;
-  /* TODO: add border-bottom (same as we have for links) */
 }
 
-.catalog-item .currency {
+.price .value,
+.price .currency {
   font-size: 45px;
 }
 
-.catalog-item .kg {
+.price .currency {
+  margin-left: 4px;
+}
+
+.price .weight {
   font-size: 30px;
   font-weight: bold;
 }
@@ -208,17 +230,21 @@ a:active {
   list-style: none;
 }
 
-.info-link {
+.info-links .link {
   font-weight: normal;
   font-size: 13px;
   line-height: 16px;
 }
 
-.info-links li:first-child .info-link {
+.info-links .suppliers-info-link {
   font-weight: bold;
 }
 
 .copyright {
   font-size: 12px;
   line-height: 16px;
+}
+
+.copyright-link {
+  color: #ffffff;
 }
