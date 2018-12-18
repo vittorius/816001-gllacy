@@ -164,8 +164,8 @@ a {
 }
 
 .features {
-  background-color: #eee3d0;
   color: #323232;
+  background-color: #eee3d0;
 }
 
 .features-desc {
@@ -200,14 +200,14 @@ a {
   font-weight: bold;
   line-height: 30px;
   color: #323232;
-  box-shadow: 0 2px #323232;
+  box-shadow: 0 2px currentColor;
 }
 
 .news-item-title-link:hover,
 .news-item-title-link:focus,
 .news-item-title-link:active {
   color: #e84d37;
-  box-shadow: 0 2px rgba(232, 77, 55);
+  box-shadow: 0 2px currentColor;
 }
 
 .mailing-list {
