@@ -184,13 +184,13 @@ a {
   background-color: #ffffff;
 }
 
-.news-item h2 {
+.news-item-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
 }
 
-.news-item-title-link {
+.news-item-link {
   display: inline-block;
   margin-left: 10px;
   margin-bottom: 5px;
@@ -229,7 +229,7 @@ a {
   color: #999999;
 }
 
-.catalog-page h1 {
+.catalog-section-title {
   font-size: 35px;
   font-weight: bold;
   line-height: 41px;
@@ -239,7 +239,7 @@ a {
   list-style: none;
 }
 
-.catalog-item h2 {
+.catalog-item-title {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
