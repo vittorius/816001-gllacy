@@ -99,7 +99,7 @@ a {
 }
 
 .page-header {
-  margin-bottom: 1129px; /* TODO: temporary */
+  margin-bottom: 1140px; /* TODO: temporary */
 }
 
 .main-navigation {
@@ -193,6 +193,7 @@ a {
 .user-nav .text-icon-button {
   padding-right: 16px;
   padding-left: 49px;
+  padding-bottom: 7px;
 }
 
 .user-nav-item {
@@ -203,13 +204,28 @@ a {
   padding-right: 6px;
 }
 
+.working-info-rows {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.working-hours,
+.work-phone-number {
+  margin-top: 0;
+}
+
 .working-hours {
+  margin-top: -1px;
+  margin-right: -1px;
+  margin-bottom: 4px;
   font-size: 14px;
   font-weight: bold;
   line-height: 16px;
 }
 
 .work-phone-number {
+  margin-right: -2px;
   font-size: 22px;
   font-weight: bold;
   line-height: 24px;
