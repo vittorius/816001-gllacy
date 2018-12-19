@@ -98,6 +98,10 @@ a {
   display: none;
 }
 
+.page-header {
+  margin-bottom: 1129px; /* TODO: temporary */
+}
+
 .main-navigation {
   display: flex;
 }
@@ -217,19 +221,36 @@ a {
 }
 
 .features {
+  padding: 23px 21px 0;
+  margin-bottom: 40px;
   color: #323232;
   background-color: #eee3d0;
 }
 
 .features-desc {
+  margin-top: 0;
+  margin-bottom: 21px;
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
 }
 
 .features-list {
-  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* TODO: accomplish the micro-grid later */
+  margin: 0;
+  padding: 0;
   line-height: 22px;
+  list-style: none;
+}
+
+.features-list-item {
+  /* TODO: accomplish the micro-grid elements later */
+  width: 488px;
+  margin-bottom: 24px;
+  padding-left: 56px;
 }
 
 .news-item {
