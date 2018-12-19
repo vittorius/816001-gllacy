@@ -383,9 +383,27 @@ a {
   font-weight: bold;
 }
 
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
 .social-networks,
 .info-links {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.social-networks {
+  width: 186px;
+}
+
+.info-links {
+  box-sizing: border-box;
+  width: 320px;
+  margin-top: -1px;
+  padding: 0 11px;
 }
 
 .info-links .link {
@@ -399,8 +417,17 @@ a {
 }
 
 .copyright {
+  margin-top: -14px;
   font-size: 12px;
   line-height: 16px;
+}
+
+.copyright-logo-link {
+  padding-left: 2px;
+}
+
+.copyright-text {
+  margin-top: 1px;
 }
 
 .copyright-link {
