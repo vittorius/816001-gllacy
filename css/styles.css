@@ -24,9 +24,9 @@
 }
 
 body {
+  padding-top: 9px;
   font: 16px/18px "Roboto", "Arial", sans-serif;
   color: #ffffff;
-
   background-color: #849d8f;
 }
 
@@ -36,6 +36,19 @@ img {
 
 a {
   text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .link {
@@ -69,8 +82,15 @@ a {
   background-color: #f26843;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 27px;
+  box-sizing: border-box;
+}
+
 /* TODO: temporary hide pop-ups,  */
-.subnav,
+.subnav-popup,
 .search-popup,
 .login-popup,
 .contact-popup,
@@ -78,15 +98,22 @@ a {
   display: none;
 }
 
-.site-nav .link {
-  font-weight: bold;
-  box-shadow: none;
+.main-navigation {
+  display: flex;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: inherit;
-  box-shadow: none;
+.logo {
+  margin-right: 23px;
+}
+
+.site-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav .link {
+  font-weight: bold;
 }
 
 .site-nav .link:active {
@@ -98,23 +125,25 @@ a {
   background-color: #d07058;
 }
 
-.site-nav .site-nav-link:active.active {
+.site-nav .link:hover.active,
+.site-nav .link:focus.active,
+.site-nav .link:active.active {
   color: #323232;
   background-color: #f8f7f4;
 }
 
-.subnav {
+.subnav-popup {
   font-size: 14px;
   line-height: 16px;
   font-weight: bold;
   background-color: #ffffff;
 }
 
-.subnav ul {
+.subnav {
   list-style: none;
 }
 
-.subnav-group {
+.subnav-group-title {
   color: #323232;
 }
 
@@ -130,20 +159,44 @@ a {
   box-shadow: 0 1px rgba(232, 77, 55, 0.3);
 }
 
-.user-nav a {
+.user-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  width: 294px;
+  list-style: none;
+}
+
+.user-nav .link {
   font-size: 14px;
   line-height: 16px;
 }
 
-.user-nav button {
+.user-nav .icon-button {
   border: none;
   padding: 0;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
-  color: #323232;
+  color: #ffffff;
   background-color: transparent;
   cursor: pointer;
+}
+
+.user-nav .text-icon-button {
+  padding-right: 16px;
+  padding-left: 49px;
+}
+
+.user-nav-item {
+  margin-left: 7px;
+}
+
+.user-nav .search-link {
+  padding-right: 6px;
 }
 
 .working-hours {
