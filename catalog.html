@@ -7,23 +7,23 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="catalog-page">
-    <header class="page-header">
+    <header class="page-header container">
       <nav class="main-navigation">
-        <a href="index.html"><img src="img/logo.svg" alt="Глейси" class="logo" width="154" height="64"/></a>
+        <a class="logo-link" href="index.html"><img src="img/logo.svg" alt="Глейси" class="logo" width="154" height="64"/></a>
         <ul class="site-nav">
           <li><a class="link active" href="catalog.html">Каталог</a></li>
           <li><a class="link" href="delivery.html">Доставка и оплата</a></li>
           <li><a class="link" href="about.html">О Компании</a></li>
         </ul>
         <ul class="user-nav">
-          <li>
-            <button type="button" class="search-link">
+          <li class="user-nav-item">
+            <button type="button" class="icon-button search-link">
               <span class="visually-hidden">Поиск</span><img src="img/search-icon.svg" alt="Поиск" width="17" height="17" />
             </button>
           </li>
-          <li><button type="button" class="login-link">Вход</button></li>
-          <li class="cart">
-            <button type="button" class="cart-link cart-link-non-empty">2 товара</button>
+          <li class="user-nav-item"><button type="button" class="icon-button text-icon-button login-link">Вход</button></li>
+          <li class="user-nav-item cart">
+            <button type="button" class="icon-button text-icon-button cart-link active">2 товара</button>
             <!-- popup: shopping cart -->
             <section class="shopping-cart-popup">
               <h2 class="visually-hidden">Товары в корзине</h2>
@@ -57,10 +57,12 @@
           </li>
         </ul>
       </nav>
+      <div class="working-info-rows">
+        <p class="working-hours">С 10 до 20, ежедневно</p>
+        <p class="work-phone-number">8 812 450-25-25</p>
+      </div>
     </header>
-    <main class="main">
-      <p class="working-hours">С 10 до 20, ежедневно</p>
-      <p class="work-phone-number">8 812 450-25-25</p>
+    <main class="main-content container">
       <ul class="breadcrumbs">
         <li><a class="link" href="index.html">Главная</a></li>
         <li><a class="link" href="catalog.html">Каталог</a></li>
