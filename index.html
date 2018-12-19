@@ -69,7 +69,7 @@
       <p class="working-hours">С 10 до 20, ежедневно</p>
       <p class="work-phone-number">8 812 450-25-25</p>
     </header>
-    <main class="container">
+    <main class="container main-content">
       <h1 class="visually-hidden">Магазин &laquo;Глейси&raquo;</h1>
       <section class="features">
         <h2 class="visually-hidden">Информация о магазине</h2>
@@ -94,19 +94,18 @@
           </li>
         </ul>
       </section>
-      <div class="columns">
-        <section class="news-item">
-          <img src="img/news-item-bg.jpg" alt="10 способов сервировки фруктовых щербетов к столу" width="560" height="220" />
+      <div class="misc-columns">
+        <section class="misc-column news-item">
           <h2 class="news-item-title">Новое в нашем блоге</h2>
           <a class="news-item-link" href="news-item.html">10 способов сервировки фруктовых щербетов к столу</a>
         </section>
-        <section class="mailing-list">
+        <section class="misc-column mailing-list">
           <h2 class="visually-hidden">Рассылка</h2>
           <p class="mailing-list-desc">
             Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать
             всякой ненужной ерунды. Честно =)
           </p>
-          <form action="/add-to-mailing-list" method="POST">
+          <form class="mailing-list-form" action="/add-to-mailing-list" method="POST">
             <input type="email" name="email" aria-label="Ваш адрес электронной почты для рассылки" placeholder="Электронная почта" />
             <button type="submit" class="button">Отправить</button>
           </form>

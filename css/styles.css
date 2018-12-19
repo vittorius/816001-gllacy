@@ -215,6 +215,11 @@ a {
   line-height: 24px;
 }
 
+.main-content {
+  /* margin-bottom: 40px; */ /* TODO: uncomment later */
+  margin-bottom: 501px;
+}
+
 .breadcrumbs {
   font-size: 14px;
   line-height: 16px;
@@ -253,28 +258,40 @@ a {
   padding-left: 56px;
 }
 
+.misc-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.misc-column {
+  box-sizing: border-box;
+  width: 560px;
+  min-height: 220px;
+}
+
 .news-item {
+  padding: 22px 20px;
   color: #323232;
   background-color: #ffffff;
+  background-image: url("../img/news-item-bg.jpg");
 }
 
 .news-item-title {
+  margin-top: 0;
+  margin-bottom: 3px;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
 }
 
 .news-item-link {
-  display: inline-block;
-  margin-left: 10px;
-  margin-bottom: 5px;
-  box-sizing: border-box;
-  height: 25px;
+  display: block;
+  max-width: 290px;
   font-size: 24px;
   font-weight: bold;
   line-height: 30px;
   color: #323232;
-  box-shadow: 0 2px currentColor;
+  text-decoration: underline;
 }
 
 .news-item-title-link:hover,
@@ -285,12 +302,40 @@ a {
 }
 
 .mailing-list {
+  padding: 28px 20px 26px;
+  border: 5px solid aqua; /* TODO: color is temporary; border-image is intended */
   color: #5a5a5a;
   background-color: #f8f7f4;
 }
 
 .mailing-list-desc {
+  margin-top: 0;
+  margin-bottom: 37px;
+  margin-left: 2px;
   line-height: 22px;
+  /* TODO: letter-spacing: 0.002em; */
+}
+
+.mailing-list-form {
+  display: flex;
+}
+
+.mailing-list-form input,
+.mailing-list-form button {
+  box-sizing: border-box;
+  height: 44px;
+}
+
+.mailing-list-form input {
+  width: 370px;
+  margin-right: 9px;
+  padding: 0 15px;
+  padding-bottom: 3px;
+}
+
+.mailing-list-form button[type="submit"] {
+  min-width: 131px;
+  padding-bottom: 7px;
 }
 
 /* NOTE: works only if specified as ungrouped */
