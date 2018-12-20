@@ -23,6 +23,8 @@
   src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/robotobold.woff2") format("woff2"), url("../fonts/robotobold.woff") format("woff");
 }
 
+/* common styles */
+
 body {
   padding-top: 9px;
   font: 16px/18px "Roboto", "Arial", sans-serif;
@@ -98,8 +100,8 @@ a {
   display: none;
 }
 
-.page-header {
-  margin-bottom: 1140px; /* TODO: temporary */
+.index-page .page-header {
+  margin-bottom: 1162px; /* TODO: temporary */
 }
 
 .main-navigation {
@@ -232,20 +234,18 @@ a {
 }
 
 .work-phone-number {
+  margin-bottom: 0;
   margin-right: -2px;
   font-size: 22px;
   font-weight: bold;
   line-height: 24px;
 }
 
+/* index page */
+
 .index-page .main-content {
   /* margin-bottom: 40px; */ /* TODO: uncomment later */
   margin-bottom: 501px;
-}
-
-.breadcrumbs {
-  font-size: 14px;
-  line-height: 16px;
 }
 
 .features {
@@ -371,7 +371,28 @@ a {
   color: #999999;
 }
 
+/* catalog page */
+
+.breadcrumbs {
+  margin: 0;
+  margin-top: -19px;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+}
+
+.breadcrumbs-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 21px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
 .catalog-section-title {
+  margin-top: 2px;
+  margin-left: 1px;
+  margin-bottom: 200px; /* TODO: temporary */
   font-size: 35px;
   font-weight: bold;
   line-height: 41px;
@@ -446,7 +467,11 @@ a {
 }
 
 .copyright-logo-link {
-  padding-left: 2px;
+  display: block;
+  width: 108px;
+  height: 38px;
+  padding-left: 1px;
+  margin-bottom: 5px;
 }
 
 .copyright-text {
