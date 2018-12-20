@@ -423,9 +423,10 @@ a {
 
 .catalog-item .price {
   position: absolute;
-  top: 209px;
+  top: 207px;
   line-height: 13.13px;
   font-weight: bold;
+  left: -2px;
 }
 
 .catalog-item-title {
