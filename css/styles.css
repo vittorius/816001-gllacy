@@ -399,18 +399,38 @@ a {
 }
 
 .catalog-items-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.catalog-item-title {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 22px;
+.catalog-item {
+  position: relative;
+  width: 267px;
+  margin-bottom: 38px;
+}
+
+.catalog-item-picture {
+  margin-bottom: 9px;
 }
 
 .catalog-item .price {
+  position: absolute;
+  top: 209px;
   line-height: 13.13px;
   font-weight: bold;
+}
+
+.catalog-item-title {
+  margin: 0;
+  padding: 0 5px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: center;
 }
 
 .price .value,
