@@ -248,6 +248,10 @@ a {
   margin-bottom: 501px;
 }
 
+.catalog-page .main-content {
+  margin-bottom: 131px; /* TODO: temporary */
+}
+
 .features {
   padding: 23px 21px 0;
   margin-bottom: 40px;
