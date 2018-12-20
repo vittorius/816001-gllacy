@@ -29,15 +29,29 @@
           <li class="site-nav-item"><a class="link" href="about.html">О Компании</a></li>
         </ul>
         <ul class="user-nav">
-          <li class="user-nav-item">
-            <button type="button" class="icon-button search-link">
-              <span class="visually-hidden">Поиск</span
-              ><img class="search-link-picture" src="img/search-icon.svg" alt="Поиск" width="17" height="17" />
+          <li class="user-nav-item active">
+            <button type="button" class="icon-button search-link" aria-label="Поиск">
+              <span class="visually-hidden">Поиск</span>
+              <svg
+                class="search-link-picture"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+              >
+                <path
+                  fill="#FFF"
+                  d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"
+                />
+              </svg>
             </button>
             <!-- popup: search -->
             <section class="search-popup">
               <h2 class="visually-hidden">Форма поиска</h2>
-              <form action="/search" method="POST"><input type="search" name="search" aria-label="Что ищем?" placeholder="Что ищем?" /></form>
+              <form class="search-form" action="/search" method="POST">
+                <input type="search" name="search" aria-label="Что ищем?" placeholder="Что ищем?" />
+              </form>
             </section>
           </li>
           <li class="user-nav-item">
@@ -60,7 +74,8 @@
               </form>
             </section>
           </li>
-          <li class="user-nav-item cart">
+          <li class="user-nav-item">
+            <!-- NOTE: add "cart-full" class to .user-nav-item to see the full cart styles -->
             <button type="button" class="icon-button text-icon-button cart-link" aria-label="Корзина: нет товаров">Пусто</button>
             <!-- popup: shopping cart -->
             <section class="shopping-cart-popup"><h2 class="visually-hidden">Товары в корзине</h2></section>

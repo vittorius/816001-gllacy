@@ -93,7 +93,6 @@ a {
 }
 
 /* TODO: temporary hide pop-ups,  */
-.search-popup,
 .login-popup,
 .contact-popup,
 .shopping-cart-popup {
@@ -251,6 +250,10 @@ a {
   font-size: 14px;
 }
 
+.user-nav-item.active {
+  position: relative;
+}
+
 .user-nav-item .icon-button {
   border: none;
   padding: 0;
@@ -259,7 +262,7 @@ a {
   font-weight: 500;
   line-height: 16px;
   color: #ffffff;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
 
@@ -270,18 +273,99 @@ a {
 
 .user-nav .search-link {
   position: relative;
-  width: 30px;
+  vertical-align: text-top;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
 }
 
 .search-link .search-link-picture {
   position: absolute;
-  top: 10px;
-  left: 6px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.user-nav .cart-link.active {
+.user-nav-item.active path {
+  fill: #323232;
+}
+
+.search-popup {
+  display: none;
+  position: absolute;
+  top: 39px;
+  box-sizing: border-box;
+  width: 341px;
+  padding: 20px 14px 20px 15px;
+  right: 0;
+  border-radius: 5px;
+  background-color: #f8f7f4;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 20px 20px 0;
+}
+
+.user-nav-item.active .search-popup {
+  display: block;
+}
+
+.search-form input[type="search"] {
+  width: calc(100% - 1px);
+  padding: 13px;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+/* NOTE: works only if specified as ungrouped */
+.search-form input::-ms-input-placeholder {
+  color: #999999;
+}
+
+/* NOTE: works only if specified as ungrouped */
+.search-form input::placeholder {
+  color: #999999;
+}
+
+.login-popup {
+  display: none;
+  position: absolute;
+  top: 39px;
+  right: 0;
+  box-sizing: border-box;
+  width: 276px;
+  height: 215px;
+  border-radius: 5px;
+  background-color: #f8f7f4;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 20px 20px 0;
+}
+
+.user-nav-item.active .login-popup {
+  display: block;
+}
+
+.user-nav-item .login-link {
+  background-image: url("../img/login-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 15px 6px;
+}
+
+.user-nav-item.active .login-link {
+  background-image: url("../img/login-icon-active.svg");
+  background-repeat: no-repeat;
+  background-position: 15px 50%;
+}
+
+.user-nav-item .cart-link {
+  background-image: url("../img/cart-icon-empty.svg");
+  background-repeat: no-repeat;
+  background-position: 15px 50%;
+}
+
+.user-nav-item.active .cart-link,
+.user-nav-item.cart-full .cart-link {
+  background-image: url("../img/cart-icon-full.svg");
+  background-repeat: no-repeat;
+  background-position: 15px 50%;
   color: #323232;
-  background-color: #ffffff;
+  background-color: #f7f6f3;
 }
 
 .working-info-rows {
