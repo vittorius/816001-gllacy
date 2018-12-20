@@ -55,7 +55,8 @@ a {
 
 .link {
   color: #ffffff;
-  box-shadow: 0 1px rgba(255, 255, 255, 0.2);
+  background-image: linear-gradient(180deg, transparent 19px, rgba(255, 255, 255, 0.2) 19px, rgba(255, 255, 255, 0.2) 20px, transparent 20px);
+  padding-bottom: 1px;
 }
 
 .link:hover,
@@ -110,38 +111,47 @@ a {
 }
 
 .logo {
-  margin-right: 23px;
+  margin-right: 9px;
 }
 
 .logo-link {
   display: block;
   width: 154px;
   height: 64px;
-  margin-right: 23px;
+  margin-right: 9px;
 }
 
 .site-nav {
+  display: flex;
   margin: 0;
+  margin-top: -6px;
   padding: 0;
   list-style: none;
 }
 
-.site-nav .link {
+.site-nav-item {
+  padding: 7px 14px;
+}
+
+.site-nav-item.active {
+  background-color: #f8f7f4;
+  border-radius: 20px;
+}
+
+.site-nav-item .link {
   font-weight: bold;
 }
 
-.site-nav .link:active {
+.site-nav-item.active .link {
+  /* background-color: #d07058;  */ /* TODO: uncomment */
+  /* TODO: temporary added the same styles as for .link.active:hover, :focus, :active */
   color: #323232;
-  background-color: #f8f7f4;
+  background-image: none; /* to remove gradient underline */
 }
 
-.site-nav .link.active {
-  background-color: #d07058;
-}
-
-.site-nav .link:hover.active,
-.site-nav .link:focus.active,
-.site-nav .link:active.active {
+.site-nav-item.active .link:hover,
+.site-nav-item.active .link:focus,
+.site-nav-item.active .link:active {
   color: #323232;
   background-color: #f8f7f4;
 }
