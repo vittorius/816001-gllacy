@@ -55,7 +55,7 @@ a {
 
 .link {
   color: #ffffff;
-  background-image: linear-gradient(180deg, transparent 19px, rgba(255, 255, 255, 0.2) 19px, rgba(255, 255, 255, 0.2) 20px, transparent 20px);
+  background-image: linear-gradient(0deg, transparent 0, rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
   padding-bottom: 1px;
 }
 
