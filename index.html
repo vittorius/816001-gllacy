@@ -47,35 +47,36 @@
               </svg>
             </button>
             <!-- popup: search -->
-            <section class="search-popup">
+            <!-- TODO: temporary hidden to show the login popup -->
+            <section class="search-popup" style="display: none;">
               <h2 class="visually-hidden">Форма поиска</h2>
               <form class="search-form" action="/search" method="POST">
                 <input type="search" name="search" aria-label="Что ищем?" placeholder="Что ищем?" />
               </form>
             </section>
           </li>
-          <li class="user-nav-item">
+          <li class="user-nav-item active">
             <button type="button" class="icon-button text-icon-button login-link">Вход</button>
             <!-- popup: login -->
             <section class="login-popup">
               <h2 class="visually-hidden">Форма входа</h2>
-              <form action="/login" method="POST">
-                <p><input type="email" name="email" aria-label="Электронная почта" placeholder="Электронная почта" /></p>
-                <p><input type="password" name="password" aria-label="Пароль" placeholder="Пароль" /></p>
-                <div class="login-action-columns">
-                  <div><button type="submit">Войти</button></div>
-                  <div>
-                    <ul>
-                      <li><a class="login-action-link" href="forgot-password.html">Забыли пароль?</a></li>
-                      <li><a class="login-action-link" href="sign-up.html">Новая регистрация</a></li>
+              <form class="login-form" action="/login" method="POST">
+                <div class="login-form-row"><input type="email" name="email" aria-label="Электронная почта" placeholder="Электронная почта" /></div>
+                <div class="login-form-row"><input type="password" name="password" aria-label="Пароль" placeholder="Пароль" /></div>
+                <div class="login-form-row login-form-actions-container">
+                  <div class="login-form-column"><button class="button" type="submit">Войти</button></div>
+                  <div class="login-form-column">
+                    <ul class="login-action-list">
+                      <li class="login-action-item"><a class="login-action-link" href="forgot-password.html">Забыли пароль?</a></li>
+                      <li class="login-action-item"><a class="login-action-link" href="sign-up.html">Новая регистрация</a></li>
                     </ul>
                   </div>
                 </div>
               </form>
             </section>
           </li>
+          <!-- NOTE: add "cart-full" class to .user-nav-item to see the full cart styles -->
           <li class="user-nav-item">
-            <!-- NOTE: add "cart-full" class to .user-nav-item to see the full cart styles -->
             <button type="button" class="icon-button text-icon-button cart-link" aria-label="Корзина: нет товаров">Пусто</button>
             <!-- popup: shopping cart -->
             <section class="shopping-cart-popup"><h2 class="visually-hidden">Товары в корзине</h2></section>
