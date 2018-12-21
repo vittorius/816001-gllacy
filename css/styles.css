@@ -137,15 +137,19 @@ a {
 }
 
 .site-nav {
-  display: flex;
   margin: 0;
-  margin-top: -6px;
+  margin-top: -4px;
   padding: 0;
+  padding-bottom: 1px;
   list-style: none;
+  font-size: 0;
 }
 
 .site-nav-item {
-  padding: 7px 14px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 6px 14px 8px;
+  font-size: 16px;
 }
 
 .site-nav-item.active {
@@ -286,7 +290,6 @@ a {
   vertical-align: middle;
   height: 31px;
   margin-top: 3px;
-  padding-bottom: 5px;
   padding-right: 17px;
   padding-left: 43px;
   border-radius: 20px;
