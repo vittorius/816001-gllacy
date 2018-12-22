@@ -695,6 +695,7 @@ a {
   transform: translate(-50%, -50%);
   box-sizing: border-box;
   width: 477px;
+  height: 442px;
   padding: 14px 24px;
   border-radius: 10px;
   background-color: #f8f7f4;
@@ -702,12 +703,16 @@ a {
 
 .contact-heading {
   margin-top: 0;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
   letter-spacing: 0;
   color: #323232;
+}
+
+.contact-form {
+  padding-top: 1px;
 }
 
 .contact-form-row {
@@ -718,7 +723,8 @@ a {
 .contact-form input[type="email"] {
   box-sizing: border-box;
   width: 265px;
-  padding: 13px 14px 13px 14px;
+  /* margin-bottom: -1px; */
+  padding: 13px 14px 11px;
   font-weight: bold;
   border: none;
   border-radius: 5px;
@@ -728,11 +734,17 @@ a {
 
 .contact-form textarea {
   width: calc(100% - 31px);
-  padding: 13px 14px;
+  height: 137px;
+  padding: 8px 14px;
   border: none;
   border-radius: 5px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 0;
   background-color: #ffffff;
   box-shadow: rgba(178, 178, 178, 0.52) 0 0 0 1px;
+  resize: none;
+  overflow: hidden;
 }
 
 .contact-form input[type="text"]:hover,
@@ -783,6 +795,7 @@ a {
   background-color: transparent;
   background-image: url("../img/cross-big.svg");
   background-position: center;
+  cursor: pointer;
 }
 
 /* catalog page */
