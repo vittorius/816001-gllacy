@@ -631,7 +631,7 @@ a {
 .misc-columns {
   display: flex;
   justify-content: space-between;
-  height: 215px;
+  height: 220px;
 }
 
 .misc-column {
@@ -641,8 +641,6 @@ a {
 
 .news-item {
   position: relative;
-  width: 560px;
-  height: 220px;
   border-radius: 16px;
   overflow: hidden; /* it's required to have internal image clipped */
   color: #323232;
