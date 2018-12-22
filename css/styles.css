@@ -785,7 +785,6 @@ a {
 .contact-form input[type="email"] {
   box-sizing: border-box;
   width: 265px;
-  /* margin-bottom: -1px; */
   padding: 13px 14px 11px;
   font-weight: bold;
   border: none;
@@ -829,13 +828,13 @@ a {
 }
 
 /* works only if specified as ungrouped */
-.contact-form textarea::-ms-input-placeholder {
+.contact-form input::placeholder {
   font-weight: normal;
   color: #999999;
 }
 
 /* works only if specified as ungrouped */
-.contact-form input::placeholder {
+.contact-form textarea::-ms-input-placeholder {
   font-weight: normal;
   color: #999999;
 }
