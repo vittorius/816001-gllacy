@@ -699,6 +699,23 @@ a {
 .contact-popup.open {
   display: block;
 }
+
+.contact-popup-overlay {
+  display: none;
+}
+
+.contact-popup.open + .contact-popup-overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.3;
+}
+
 .contact-heading {
   margin-top: 0;
   margin-bottom: 21px;
