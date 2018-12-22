@@ -684,11 +684,6 @@ a {
 
 .contact-popup {
   display: none;
-  position: relative;
-}
-
-.contact-popup.open {
-  display: block;
   position: fixed;
   left: 50%;
   top: 50%;
@@ -701,6 +696,9 @@ a {
   background-color: #f8f7f4;
 }
 
+.contact-popup.open {
+  display: block;
+}
 .contact-heading {
   margin-top: 0;
   margin-bottom: 21px;
