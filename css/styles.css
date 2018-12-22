@@ -549,10 +549,15 @@ a {
 }
 
 .features {
-  padding: 23px 21px 0;
+  padding-top: 23px;
+  padding-left: 21px;
   margin-bottom: 40px;
+  border-radius: 16px;
   color: #323232;
   background-color: #eee3d0;
+  /* FIXME: slice a new tile from the design */
+  background-image: url("../img/waffle-bg.jpg");
+  background-position: -3px 3px;
 }
 
 .features-desc {
@@ -561,13 +566,12 @@ a {
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
+  letter-spacing: 0.004em;
 }
 
 .features-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  /* TODO: accomplish the micro-grid later */
   margin: 0;
   padding: 0;
   line-height: 22px;
@@ -576,9 +580,52 @@ a {
 
 .features-list-item {
   /* TODO: accomplish the micro-grid elements later */
+  position: relative;
   width: 488px;
   margin-bottom: 24px;
+  margin-right: 22px;
   padding-left: 56px;
+  /* letter-spacing: 0.001em; */
+  background-repeat: no-repeat;
+  background-position: -1px -12px;
+}
+
+.features-list-item:nth-child(even) {
+  margin-right: 0;
+}
+
+.features-list-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -11px;
+  left: -1px;
+  width: 49px;
+  height: 49px;
+}
+
+.features-list-item:nth-child(even)::before {
+  left: -2px;
+}
+
+.features-list-item:nth-child(n + 3)::before {
+  top: -13px;
+}
+
+.ice-cream-icon-bg::before {
+  background-image: url("../img/ice-cream-feature-icon.svg");
+}
+
+.cow-icon-bg::before {
+  background-image: url("../img/cow-feature-icon.svg");
+}
+
+.eco-icon-bg::before {
+  background-image: url("../img/eco-feature-icon.svg");
+}
+
+.thermo-icon-bg::before {
+  background-image: url("../img/thermometer-feature-icon.svg");
 }
 
 .misc-columns {
