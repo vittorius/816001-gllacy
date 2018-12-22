@@ -644,12 +644,9 @@ a {
   width: 560px;
   height: 220px;
   border-radius: 16px;
+  overflow: hidden; /* it's required to have internal image clipped */
   color: #323232;
   background-color: #ffffff;
-}
-
-.news-item-picture {
-  border-radius: 16px;
 }
 
 .news-item-title {
