@@ -140,6 +140,8 @@ a {
   align-items: center;
 }
 
+/* logo */
+
 .logo {
   margin-right: 9px;
 }
@@ -150,6 +152,8 @@ a {
   height: 64px;
   margin-right: 9px;
 }
+
+/* site nav */
 
 .site-nav {
   margin: 0;
@@ -190,6 +194,8 @@ a {
   color: #323232;
   background-color: #f8f7f4;
 }
+
+/* site nav: subnav styles */
 
 .subnav-popup {
   display: none;
@@ -270,6 +276,8 @@ a {
   background-color: #fbb5a5;
 }
 
+/* user nav: common styles */
+
 .user-nav {
   margin: 0;
   margin-top: -8px;
@@ -315,6 +323,8 @@ a {
   color: #323232;
   background-color: #ffffff;
 }
+
+/* search form */
 
 .user-nav .search-link {
   position: relative;
@@ -371,6 +381,8 @@ a {
   font-weight: normal;
   color: #999999;
 }
+
+/* login form */
 
 .login-popup {
   display: none;
@@ -473,6 +485,8 @@ a {
   line-height: 24px;
   white-space: nowrap;
 }
+
+/* shopping cart */
 
 .user-nav-item .cart-link {
   padding-bottom: 1px;
@@ -666,6 +680,8 @@ a {
 .mailing-list input::placeholder {
   color: #999999;
 }
+
+/* contact popup */
 
 /* catalog page */
 
