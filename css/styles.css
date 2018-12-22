@@ -689,32 +689,58 @@ a {
 
 .mailing-list-desc {
   margin-top: 0;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
   margin-left: 2px;
   line-height: 22px;
-  /* TODO: letter-spacing: 0.002em; */
+  letter-spacing: 0.002em;
 }
 
 .mailing-list-form {
   display: flex;
+  justify-content: space-between;
+  padding-left: 2px;
 }
 
-.mailing-list-form input,
-.mailing-list-form button {
+.mailing-list-form input[type="email"] {
   box-sizing: border-box;
-  height: 44px;
+  width: 366px;
+  margin-top: 2px;
+  padding: 11px 14px 13px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: rgba(178, 178, 178, 0.52) 0 0 0 1px;
 }
 
-.mailing-list-form input {
-  width: 370px;
-  margin-right: 9px;
-  padding: 0 15px;
-  padding-bottom: 3px;
+.mailing-list-form input[type="email"]:hover {
+  box-shadow: rgba(154, 154, 154, 0.52) 0 0 0 2px;
+}
+
+.mailing-list-form input[type="email"]:focus {
+  outline: 0;
+  box-shadow: rgba(46, 136, 228, 0.52) 0 0 0 2px;
+}
+
+/* works only if specified as ungrouped */
+.mailing-list-form input::-ms-input-placeholder {
+  font-weight: normal;
+  color: #999999;
+}
+
+/* works only if specified as ungrouped */
+.mailing-list-form input::placeholder {
+  font-weight: normal;
+  color: #999999;
 }
 
 .mailing-list-form button[type="submit"] {
-  min-width: 131px;
-  padding-bottom: 7px;
+  box-sizing: border-box;
+  max-width: 129px;
+  padding-left: 19px;
+  padding-top: 7px;
+  padding-bottom: 12px;
+  border-radius: 25px;
 }
 
 /* works only if specified as ungrouped */
