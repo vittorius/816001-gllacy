@@ -162,17 +162,19 @@
       </div>
     </footer>
     <!-- popup: contact -->
-    <section class="contact-popup">
-      <h2>Мы обязательно вам ответим!</h2>
-      <form action="/search" method="POST">
-        <p><input type="text" name="contact[name]" aria-label="Как вас зовут?" placeholder="Как вас зовут?" /></p>
-        <p><input type="email" name="contact[email]" aria-label="Ваша почта для ответа?" placeholder="Ваша почта для ответа?" /></p>
-        <p>
+    <section class="contact-popup open">
+      <h2 class="contact-heading">Мы обязательно вам ответим!</h2>
+      <form class="contact-form" action="/search" method="POST">
+        <div class="contact-form-row"><input type="text" name="contact[name]" aria-label="Как вас зовут?" placeholder="Как вас зовут?" /></div>
+        <div class="contact-form-row">
+          <input type="email" name="contact[email]" aria-label="Ваша почта для ответа?" placeholder="Ваша почта для ответа?" />
+        </div>
+        <div class="contact-form-row">
           <textarea name="contact[message]" cols="30" rows="10" aria-label="Напишите что-нибудь..." placeholder="Напишите что-нибудь..."></textarea>
-        </p>
+        </div>
         <button type="submit">Отправить</button>
       </form>
-      <button type="button" aria-label="Закрыть">×</button>
+      <button class="button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
   </body>
 </html>

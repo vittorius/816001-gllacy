@@ -26,6 +26,7 @@
 /* common styles */
 
 body {
+  position: relative;
   padding-top: 9px;
   font: 16px/18px "Roboto", "Arial", sans-serif;
   color: #ffffff;
@@ -123,12 +124,6 @@ a {
   margin: 0 auto;
   padding: 0 27px;
   box-sizing: border-box;
-}
-
-/* TODO: temporary hide pop-ups,  */
-.contact-popup,
-.shopping-cart-popup {
-  display: none;
 }
 
 .index-page .page-header {
@@ -370,13 +365,13 @@ a {
   border-radius: 5px;
 }
 
-/* NOTE: works only if specified as ungrouped */
+/* works only if specified as ungrouped */
 .search-form input::-ms-input-placeholder {
   font-weight: normal;
   color: #999999;
 }
 
-/* NOTE: works only if specified as ungrouped */
+/* works only if specified as ungrouped */
 .search-form input::placeholder {
   font-weight: normal;
   color: #999999;
@@ -446,13 +441,13 @@ a {
   box-shadow: rgba(46, 136, 228, 0.52) 0 0 0 2px;
 }
 
-/* NOTE: works only if specified as ungrouped */
+/* works only if specified as ungrouped */
 .login-form input::-ms-input-placeholder {
   font-weight: normal;
   color: #999999;
 }
 
-/* NOTE: works only if specified as ungrouped */
+/* works only if specified as ungrouped */
 .login-form input::placeholder {
   font-weight: normal;
   color: #999999;
@@ -504,6 +499,10 @@ a {
   background-position: 15px 6px;
   color: #323232;
   background-color: #f7f6f3;
+}
+
+.shopping-cart-popup {
+  display: none;
 }
 
 .shopping-cart-popup .button {
@@ -671,17 +670,120 @@ a {
   padding-bottom: 7px;
 }
 
-/* NOTE: works only if specified as ungrouped */
+/* works only if specified as ungrouped */
 .mailing-list input::-ms-input-placeholder {
   color: #999999;
 }
 
-/* NOTE: works only if specified as ungrouped */
+/* works only if specified as ungrouped */
 .mailing-list input::placeholder {
   color: #999999;
 }
 
 /* contact popup */
+
+.contact-popup {
+  display: none;
+  position: relative;
+}
+
+.contact-popup.open {
+  display: block;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  width: 477px;
+  padding: 14px 24px;
+  border-radius: 10px;
+  background-color: #f8f7f4;
+}
+
+.contact-heading {
+  margin-top: 0;
+  margin-bottom: 23px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0;
+  color: #323232;
+}
+
+.contact-form-row {
+  margin-bottom: 22px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+  box-sizing: border-box;
+  width: 265px;
+  padding: 13px 14px 13px 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: rgba(178, 178, 178, 0.52) 0 0 0 1px;
+}
+
+.contact-form textarea {
+  width: calc(100% - 31px);
+  padding: 13px 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: rgba(178, 178, 178, 0.52) 0 0 0 1px;
+}
+
+.contact-form input[type="text"]:hover,
+.contact-form input[type="email"]:hover,
+.contact-form textarea:hover {
+  box-shadow: rgba(154, 154, 154, 0.52) 0 0 0 1px;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:hover {
+  outline: 0;
+  box-shadow: rgba(46, 136, 228, 0.52) 0 0 0 2px;
+}
+
+/* works only if specified as ungrouped */
+.contact-form input::-ms-input-placeholder {
+  font-weight: normal;
+  color: #999999;
+}
+
+/* works only if specified as ungrouped */
+.contact-form textarea::-ms-input-placeholder {
+  font-weight: normal;
+  color: #999999;
+}
+
+/* works only if specified as ungrouped */
+.contact-form input::placeholder {
+  font-weight: normal;
+  color: #999999;
+}
+
+/* works only if specified as ungrouped */
+.contact-form textarea::placeholder {
+  font-weight: normal;
+  color: #999999;
+}
+
+.contact-popup .button-close {
+  position: absolute;
+  top: 15px;
+  right: 16px;
+  width: 18px;
+  height: 17px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/cross-big.svg");
+  background-position: center;
+}
 
 /* catalog page */
 
