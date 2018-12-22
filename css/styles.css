@@ -645,6 +645,10 @@ a {
   background-color: #ffffff;
 }
 
+.news-item-picture {
+  border-radius: 16px;
+}
+
 .news-item-title {
   position: absolute;
   top: 9px;
