@@ -166,22 +166,27 @@ a {
   font-size: 16px;
 }
 
+.site-nav-item .link {
+  font-weight: bold;
+}
+
 .site-nav-item.active {
   position: relative;
   background-color: #f8f7f4;
   border-radius: 20px;
 }
 
-.site-nav-item .link {
-  font-weight: bold;
+.site-nav-item.active > .link {
+  color: #323232;
+  background-image: none;
+}
+
+.site-nav-item.current {
+  background-color: #d07058;
+  border-radius: 20px;
 }
 
 .site-nav-item.current > .link {
-  background-color: #d07058;
-}
-
-.site-nav-item.active > .link {
-  color: #323232;
   background-image: none;
 }
 
@@ -308,12 +313,11 @@ a {
 
 .user-nav-item .text-icon-button {
   vertical-align: middle;
-  height: 31px;
+  height: 32px;
   margin-top: 3px;
-  padding-right: 17px;
+  padding-right: 16px;
   padding-left: 43px;
   border-radius: 20px;
-  letter-spacing: 0.007em;
 }
 
 .user-nav-item.active .text-icon-button {
