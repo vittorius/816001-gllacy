@@ -974,32 +974,52 @@ a {
   justify-content: space-between;
 }
 
-.social-networks,
-.info-links {
+.social-networks-list,
+.info-links-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.social-networks {
+.social-networks-list {
   width: 186px;
 }
 
-.info-links {
+.info-links-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
   box-sizing: border-box;
-  width: 320px;
+  width: 350px;
   margin-top: -1px;
-  padding: 0 11px;
+  padding: 0 0 18px 26px;
 }
 
-.info-links .link {
+.info-links-item {
+  min-width: 130px;
+  margin-right: 12px;
+}
+
+.info-links-list .link {
   font-weight: normal;
   font-size: 13px;
   line-height: 16px;
 }
 
-.info-links .suppliers-info-link {
+.info-links-list .suppliers-info-link {
+  position: relative;
   font-weight: bold;
+}
+
+.info-links-list .suppliers-info-link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: -22px;
+  width: 15px;
+  height: 13px;
+  background-image: url("../img/heart-icon.svg");
 }
 
 .copyright {
