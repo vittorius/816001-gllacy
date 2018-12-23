@@ -55,7 +55,8 @@ a {
 }
 
 .link {
-  padding-bottom: 1px; /* making bottom gradient border visible */
+  /* making bottom gradient border visible */
+  padding-bottom: 2px;
   color: #ffffff;
   /* TODO: change "deg" to readable direction */
   background-image: linear-gradient(0deg, transparent 0, rgba(255, 255, 255, 0.3) 0, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
