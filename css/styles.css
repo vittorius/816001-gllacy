@@ -114,7 +114,7 @@ a {
 }
 
 .button:active {
-  outline: 0; /* only for :active */
+  outline: none; /* only for :active */
   box-shadow: inset 0 2px 2px 0 #942718;
   background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
 }
@@ -162,6 +162,7 @@ a {
 .site-nav-item {
   display: inline-block;
   vertical-align: middle;
+  position: relative;
   padding: 6px 14px 8px;
   font-size: 16px;
 }
@@ -170,15 +171,26 @@ a {
   font-weight: bold;
 }
 
-.site-nav-item.active {
-  position: relative;
+.site-nav-item:hover {
   background-color: #f8f7f4;
   border-radius: 20px;
 }
 
-.site-nav-item.active > .link {
+.site-nav-item:hover > .link {
   color: #323232;
+  background-color: #f8f7f4;
   background-image: none;
+}
+
+/* to create a gap between site nav item and subnav and present loosing hover */
+.site-nav-item:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 33px;
+  width: 100%;
+  height: 5px;
+  background-color: transparent;
 }
 
 .site-nav-item.current {
@@ -188,13 +200,6 @@ a {
 
 .site-nav-item.current > .link {
   background-image: none;
-}
-
-.site-nav-item.active > .link:hover,
-.site-nav-item.active > .link:focus,
-.site-nav-item.active > .link:active {
-  color: #323232;
-  background-color: #f8f7f4;
 }
 
 /* site nav: subnav styles */
@@ -213,7 +218,7 @@ a {
   box-shadow: rgba(0, 0, 0, 0.4) 0 20px 20px 0;
 }
 
-.site-nav-item.active .subnav-popup {
+.site-nav-item:hover .subnav-popup {
   display: block;
 }
 
@@ -292,12 +297,9 @@ a {
 .user-nav-item {
   display: inline-block;
   vertical-align: middle;
+  position: relative;
   margin-left: 11px;
   font-size: 14px;
-}
-
-.user-nav-item.active {
-  position: relative;
 }
 
 .user-nav-item .icon-button {
@@ -311,6 +313,17 @@ a {
   cursor: pointer;
 }
 
+/* to create a gap between site nav item and subnav and present loosing hover */
+.user-nav-item:hover .icon-button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 33px;
+  width: 100%;
+  height: 5px;
+  background-color: transparent;
+}
+
 .user-nav-item .text-icon-button {
   vertical-align: middle;
   height: 32px;
@@ -318,11 +331,6 @@ a {
   padding-right: 16px;
   padding-left: 43px;
   border-radius: 20px;
-}
-
-.user-nav-item.active .text-icon-button {
-  color: #323232;
-  background-color: #ffffff;
 }
 
 /* search form */
@@ -342,8 +350,15 @@ a {
   transform: translate(-50%, -50%);
 }
 
-.user-nav-item.active .search-link-shape {
+.user-nav-item:hover .search-link-shape {
   fill: #323232;
+}
+
+.user-nav-item:hover .search-link::after {
+  left: -309px;
+  top: 0;
+  width: 341px;
+  height: 37px;
 }
 
 .search-popup {
@@ -359,7 +374,7 @@ a {
   box-shadow: rgba(0, 0, 0, 0.4) 0 20px 20px 0;
 }
 
-.user-nav-item.active .search-popup {
+.user-nav-item:hover .search-popup {
   display: block;
 }
 
@@ -369,6 +384,15 @@ a {
   font-weight: bold;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
+}
+
+.search-form input[type="search"]:hover {
+  box-shadow: rgba(154, 154, 154, 0.52) 0 0 0 2px;
+}
+
+.search-form input[type="search"]:focus {
+  outline: none;
+  box-shadow: rgba(46, 136, 228, 0.52) 0 0 0 2px;
 }
 
 /* works only if specified as ungrouped */
@@ -398,7 +422,7 @@ a {
   box-shadow: rgba(0, 0, 0, 0.4) 0 20px 20px 0;
 }
 
-.user-nav-item.active .login-popup {
+.user-nav-item:hover .login-popup {
   display: block;
 }
 
@@ -409,11 +433,9 @@ a {
   background-position: 15px 6px;
 }
 
-.user-nav-item .login-link:hover,
+.user-nav-item:hover .login-link,
 .user-nav-item .login-link:focus,
-.user-nav-item .login-link:active,
-.user-nav-item.active .login-link {
-  padding-bottom: 4px;
+.user-nav-item .login-link:active {
   color: #323232;
   background-color: #f7f6f3;
   background-image: url("../img/login-icon-active.svg");
@@ -443,7 +465,7 @@ a {
 
 .login-form input[type="email"]:focus,
 .login-form input[type="password"]:focus {
-  outline: 0;
+  outline: none;
   box-shadow: rgba(46, 136, 228, 0.52) 0 0 0 2px;
 }
 
@@ -724,7 +746,7 @@ a {
 }
 
 .mailing-list-form input[type="email"]:focus {
-  outline: 0;
+  outline: none;
   box-shadow: rgba(46, 136, 228, 0.52) 0 0 0 2px;
 }
 
@@ -849,7 +871,7 @@ a {
 .contact-form input[type="text"]:focus,
 .contact-form input[type="email"]:focus,
 .contact-form textarea:focus {
-  outline: 0;
+  outline: none;
   box-shadow: rgba(46, 136, 228, 0.52) 0 0 0 2px;
 }
 
