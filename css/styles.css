@@ -176,11 +176,13 @@ a {
   font-weight: bold;
 }
 
+.site-nav-item.current > .link {
+  background-color: #d07058;
+}
+
 .site-nav-item.active > .link {
-  /* background-color: #d07058;  */ /* TODO: uncomment */
-  /* TODO: temporary added the same styles as for .link.active:hover, :focus, :active */
   color: #323232;
-  background-image: none; /* to remove gradient underline */
+  background-image: none;
 }
 
 .site-nav-item.active > .link:hover,
@@ -336,7 +338,7 @@ a {
   transform: translate(-50%, -50%);
 }
 
-.user-nav-item.active path {
+.user-nav-item.active .search-link-shape {
   fill: #323232;
 }
 
